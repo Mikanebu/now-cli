@@ -11,7 +11,7 @@
     "link": "cd link && npm link",
     "lint": "xo --quiet",
     "test": "npm run lint && ava",
-    "pack": "pkg bin/now.js -c package.json -o packed/now",
+    "pack": "pkg --debug bin/now.js -c package.json -o packed/now",
     "webpack": "webpack --context download --config download/webpack.js",
     "clean": "rm -rf node_modules link/node_modules download/dist",
     "prettify": "prettier --single-quote --no-semi --write `find ./lib -name '*.js'` `find ./bin -name '*.js'`"
